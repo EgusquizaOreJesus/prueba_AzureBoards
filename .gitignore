@@ -1,0 +1,13 @@
+env/
+node_modules/
+**/node_modules/
+**/env/
+**/.idea/
+**/__pycache__/
+**/song/
+**/package-lock.json
+**/package.json
+cmake-build-debug/
+**/cmake-build-debug/
+**/.cache/
+**/music/

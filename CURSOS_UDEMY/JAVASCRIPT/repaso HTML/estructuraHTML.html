@@ -1,0 +1,169 @@
+<!--
+    Estrucutra HTML
+-->
+<!DOCTYPE html>
+<!-- 
+    La etiqueta html es la etiqueta raíz de un documento HTML.
+    Esta etiqueta envuelve todo el contenido de la página.
+-->
+<html lang="es">
+    <!--
+        La etiqueta head es la encargada de contener la información del documento HTML.
+        Esta etiqueta no es visible para el usuario.
+    -->
+    <head>
+        <title>Mi primera web</title>
+    </head>
+    <!--
+        La etiqueta body es la encargada de contener todo el contenido visible de la página.
+    -->
+    <body>
+        <!--
+            La etiqueta h1 es una etiqueta de encabezado.
+            Esta etiqueta se utiliza para definir el encabezado principal de la página.
+        -->
+        <h1>Mi primera web</h1>
+        <!-- ETIQUETAS PARA TEXTO -->
+        <!--
+            La etiqueta p es una etiqueta de párrafo.
+            Esta etiqueta se utiliza para definir un párrafo de texto.
+        -->
+        <p>Este es un párrafo de texto <br/> "br" hace Salto de linea </p>
+        <!--
+            La etiqueta strong es una etiqueta de formato.
+            Esta etiqueta se utiliza para darle un formato de negrita al texto que se encuentra dentro de la etiqueta.
+        -->
+        <hr/> <!-- Linea horizontal -->
+        <h3>OTRO ENCABEZADO</h3>
+        <strong>Este texto está en negrita.</strong>
+        <blockquote>
+            Este es un texto citado.
+        </blockquote>
+        <!--
+            La etiqueta a es una etiqueta de enlace.
+            Esta etiqueta se utiliza para definir un enlace a otra página.
+        -->
+        <a href="https://www.google.com">Ir a Google</a>
+
+        <!-- LISTAS EN HTML, hay listas ordenadas y desordenadas -->
+        <!-- Lista ORDENADA se hace con la etiqueta "ol" -->
+        <h3>Lista ordenada</h3>
+        <ol>
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+        </ol>
+        <!-- Lista DESORDENADA se hace con la etiqueta "ul" -->
+        <h3>Lista desordenada</h3>
+        <ul>
+            <li>Elemento 1</li>
+            <ul>
+                <li>Elemento 1.1</li>
+                <li>Elemento 1.2</li>
+            </ul>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+        </ul>
+        <hr/>
+        <!-- IMAGENES -->
+        <h3>Imagenes</h3>
+        <!--
+            La etiqueta img es una etiqueta de imagen.
+            Esta etiqueta se utiliza para definir una imagen en la página.
+            Esta etiqueta tiene varios atributos importantes
+            src: Es el atributo que se utiliza para definir la ruta de la imagen. La imagen se puede cargar desde su ruta absoluta o relativa.
+            La ruta relativa es la ruta que se utiliza para definir la ubicación de la imagen en relación con el documento HTML.
+            alt: Es el atributo que se utiliza para definir un texto alternativo para la imagen. (es importante para la accesibilidad, 
+            por si la imagen no carga)
+            title: Es el atributo que se utiliza para definir un título para la imagen.
+        -->
+        <h4>RUTA ABSOLUTA</h4>
+            <img alt = "imagen de waifu" title="waifu" src="C:\Users\Jesus Egusquiza\Pictures\anime\waifu.jpg" width="300px"/>
+        <h4>RUTA RELATIVA</h4>
+            <img alt = "imagen de waifu" title="waifu" src="imagenes/waifu.jpg" width="300px"/> 
+        <hr/>
+        <!-- TABLAS -->
+
+        <h3>Tablas</h3>
+        <!--
+            La etiqueta table es una etiqueta de tabla, es la etiqueta principal de una pagina.
+        -->
+        <!-- 
+            border="1" es un atributo de la etiqueta table que se utiliza para definir un borde a la tabla.
+        -->
+        <table border="1">
+            <!--
+                La etiqueta tr es una etiqueta de fila.
+                Esta etiqueta se utiliza para definir una fila en la tabla.
+            -->
+            <tr>
+                <!--
+                    La etiqueta th es una etiqueta de encabezado de tabla.
+                    Esta etiqueta se utiliza para definir un encabezado de columna en la tabla.
+                -->
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Edad</th>
+     
+            </tr>
+            <tr>
+                <!--
+                    La etiqueta td es una etiqueta de celda de tabla.
+                    Esta etiqueta se utiliza para definir una celda en la tabla.
+                -->
+                <td>Juan</td>
+                <td>Perez</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>Gomez</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <!--
+                    coldspan="2" es un atributo de la etiqueta td que se utiliza para definir el número de columnas que ocupará la celda.
+                -->
+                <td>Carlos</td>
+                <td colspan="2">Ramirez</td>
+            </tr>
+        </table>        
+        <hr/>
+        <!-- FORMULARIOS -->
+        <h3>Formularios</h3>
+    
+        <form action="">
+            <!-- Para crear un formulario en html debes usar la etiqueta "form" 
+                 el action sirve para indicar a donde se va a enviar el formulario   
+            -->
+            <p>
+                <label for="nombre">Nombre:</label> <!-- Hay que indicarle al label a que campo corresponde este label-->
+                <input type="text" placeholder="Escribe tu nombre" name="nombre"/>
+            </p>
+
+            <p>
+                <label for="descripcion">Descripcion:</label>
+                <textarea name="descripcion" placeholder="Escribe una descripcion"></textarea>
+            </p>
+
+
+            <!-- SELECTORES -->
+            <input type="radio" name="genero" value="hombre"/> Hombre <br/>
+            <input type="radio" name="genero" value="mujer"/> Mujer     <br/>
+            <input type="radio" name="genero" value="indefinido"/> indefinido   <br/>
+
+            <select name="genero2">
+                <option value="hombre">Hombre</option>
+                <option value="mujer">Mujer</option>
+                <option value="indefinido">Indefinido</option>
+            </select>
+
+            <!-- ENVIAR FORMULARIO POR BOTON -->
+            <input type="submit" value="Enviar"/>
+            <hr/>
+        </form>
+        
+
+
+    </body>
+</html>
